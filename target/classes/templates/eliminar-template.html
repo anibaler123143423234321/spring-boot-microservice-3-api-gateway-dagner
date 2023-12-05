@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Eliminar cuenta en un lapso de 7 dias</h2>
+<h3><span>Hola </span><span th:text="${username}">, ¿Estás seguro de eliminar tu cuenta?</span></h3>
+<h4>Haz click en el siguiente enlace para eliminar tu cuenta</h4>
+<a th:href="@{${url}}"><button>Ir para eliminar tu cuenta</button></a>
+</body>
+</html>
