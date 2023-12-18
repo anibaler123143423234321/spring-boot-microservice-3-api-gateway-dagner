@@ -19,7 +19,7 @@ public interface DispositivoServiceRequest {
     Object saveDevice(@RequestBody Object dispositivo);
 
     @PostMapping("/sendNotification/{deviceId}")
-    void sendNotification(@PathVariable("deviceId") String deviceId, @RequestBody Object notification);
+    void sendNotification(@PathVariable("deviceId") int deviceId, @RequestBody Object notification);
 
     @GetMapping("/getAllDevices")
     List<Object> getAllDevices();

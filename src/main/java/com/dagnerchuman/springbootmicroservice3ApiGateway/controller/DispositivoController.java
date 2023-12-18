@@ -36,7 +36,7 @@ public class DispositivoController {
     // Enviar notificación
     @PostMapping("/sendNotification/{deviceId}")
     public ResponseEntity<String> sendNotification(
-            @PathVariable("deviceId") String deviceId,
+            @PathVariable("deviceId") int deviceId,
             @RequestBody Object notification) {
         try {
             // Llama al servicio de dispositivos a través de FeignClient
