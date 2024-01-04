@@ -28,6 +28,12 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private JwtProvider jwtProvider;
 
+    @Autowired
+    public UserServiceImpl(UserRepository userRepository, PasswordEncoder passwordEncoder, JwtProvider jwtProvider) {
+        this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
+        this.jwtProvider = jwtProvider;
+    }
 
     @Override
     public List<User> findAllUsers() {

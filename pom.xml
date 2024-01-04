@@ -24,6 +24,13 @@
 			<artifactId>mail</artifactId>
 			<version>1.4.3</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>5.8.0</version>
+			<scope>test</scope>
+		</dependency>
 
 		<!-- Dependencia de Thymeleaf Core -->
 		<dependency>
